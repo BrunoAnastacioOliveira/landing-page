@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o body */
+body {
+    background-color: #4b4b4b;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #d32f2f;
+    font-weight: bold;
+    border: none;
+    background-color: #1a1a1a;
+}
+
+/* Estilos para a lista no header */
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li:hover {
+    background-color: #e67e22;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+/* Estilo para os itens do título */
+#title {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+h1 {
+    font-weight: 200;
+    margin: 0;
+}
+
+/* Estilos gerais para os links */
+a {
+    text-decoration: none;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+/* Estilos para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffd700;
+}
+
+/* Estilos para o main */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+main h2{
+margin: 10px;
+
+}
+
+main p{
+    margin: 0 10px 10px;
+
+
+}
+
+/* Estilos para as imagens */
+main img {
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto 0 100px;
+    height: auto;
+    display: block;
+}
+
+/* Estilos para o fundo */
+#fundo {
+    background-color: #1a1a1a;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+#fundo h1{
+font-style: italic;
+font-weight: bold;
+margin: 20px ;
+}
+
+#loja p {
+    font-size: 16px;
+}
+
+/* Estilos para a tabela */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    background-color: #000000;
+    width: 100%;
+    padding: 0;
+}
+
+/* Container geral */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+}
+
+.container img {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+/* Estilos para o sobre */
+#sobre {
+    background-color: #1a1a1a;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#sobre h1{
+    font-style: italic;
+    font-weight: bold;
+    margin: 20px ;
+
+}
+
+/* Estilos para o #informa */
+#informa {
+    text-align: center;
+    font-size: larger;
+    line-height: 1.6;
+    display: block;  /* Definido para "block", para manter o comportamento de bloco */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Ajuste nas tags <p> dentro de #informa */
+#informa p {
+    margin-bottom: 10px;  /* Espaço entre os parágrafos */
+    line-height: 1.4;  /* Aumentar a altura das linhas se necessário */
+    font-size: 1.1rem; /* Ajuste do tamanho da fonte, caso necessário */
+}
+
+
+/* Ajustes para a imagem */
+.image {
+    padding: 20px 10%;
+    text-align: center;
+}
+
+#imagem {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* Responsividade para telas pequenas */
+@media (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #title h1 {
+        font-size: 30px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img{
+        width: 100%;
+        max-width: 300px;
+        margin-right:0;
+    }
+
+    footer {
+        padding: 10px 0;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+}
